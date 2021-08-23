@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 import { QUERY_BY_TITLE } from "../api"
 
-const useFetch = (title= "titanic") => {
+const useFetch = (title= "cow") => {
 
     const [data, setData] = useState({
         data: {},
@@ -10,7 +10,7 @@ const useFetch = (title= "titanic") => {
     })
     
     useEffect(()=>{
-        fetch(QUERY_BY_TITLE(title))
+        fetch(QUERY_BY_TITLE("god"))
             .then((res)=> res.json())
             .then((data)=>{
                 setData({data: data, isLoding: false})
