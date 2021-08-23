@@ -3,21 +3,25 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import useFetch from "./hooks/useFetch";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    borderRadius: '0'
-  },
-}));
 
-export default function FullWidthGrid() {
+export default function App() {
+
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 1,
+    },
+    paper: {
+      padding: theme.spacing(2),
+      textAlign: "center",
+      color: theme.palette.text.secondary,
+      borderRadius: "0",
+    },
+  }));
+  
   const classes = useStyles();
+  console.log(useFetch());
 
   return (
     <div className={classes.root}>
