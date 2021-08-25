@@ -16,7 +16,7 @@ const useFetch = (title= "cow") => {
                 setData({data: data, isLoding: false})
             })
     },[title])
-
+    
     return data
 
 }
