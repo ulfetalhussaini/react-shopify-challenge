@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      <h1>THis is the Serching branch</h1>
+      <h1>THis is the main branch</h1>
       <Grid container>
         <Search />
         <Grid item xs={12} sm={6}>
