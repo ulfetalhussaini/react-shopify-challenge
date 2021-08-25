@@ -5,8 +5,13 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import useFetch from "./hooks/useFetch";
 
+// importing components
+import Search from "./components/Search";
+
 
 export default function App() {
+
+  
 
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,11 +26,13 @@ export default function App() {
   }));
   
   const classes = useStyles();
-  console.log(useFetch());
+ 
 
   return (
     <div className={classes.root}>
+      <h1>THis is the Serching branch</h1>
       <Grid container>
+        <Search />
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>Search part</Paper>
         </Grid>
